@@ -10,8 +10,7 @@ public class Solution {
     		for (int j = i; j < length; j += step){
     		   	chars[count] = s.charAt(j);
     			count++;
-    			if (interval < step && interval > 0 
-    && j + interval < length && count <  length){
+    			if (interval < step && interval > 0 && j + interval < length && count <  length){
     				chars[count] = s.charAt(j + interval);
     				count++;
     			}
